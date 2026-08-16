@@ -1,17 +1,469 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
-    <meta name="description" content="Webpage description goes here" />
     <meta charset="utf-8">
     <title>Simon D. Wall</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="simondwall">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.46.0/tabler-icons.min.css"
+        integrity="sha512-7YwNeYzQJj3HmACGDk1qmoA8dXPVYp+WIVMjeJMSJ3cfldjq5ob6UcRAM+HlxFozG+9jhGPvli1HimRfKHtXfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <h1>Simon D. Wall</h1>
+    <div class="hero">
+        <div class="hero-content flex flex-col p-10 min-h-screen max-w-screen">
+            <h1 class="text-[12dvw] -mb-[12dvw] z-0">Simon D. Wall</h1>
+            <img src="foto.webp" class="-mb-[25dvh] z-1 max-w-[75dvw] max-h-[75dvh] mask-x-from-80% select-none"
+                draggable="false">
+            <div
+                class="z-2 min-w-full -mb-[12.5dvh] min-h-[25dvh] bg-linear-to-b from-transparent via-30% via-white/80 to-70% to-white">
+            </div>
+            <div class="z-3 text-center">
+                <p class="py-6 mb-8 text-[clamp(1em,2dvw,2dvw)]">
+                    Ein Informatiker mit Interesse an:
+                    <span class="text-rotate">
+                        <span class="justify-items-center px-2">
+                            <span>Artifical Intelligence</span>
+                            <span>Web Development</span>
+                            <span>Embedded Software</span>
+                        </span>
+                    </span>
+                </p>
+                <button onclick="location.href='mailto:simondanielwall@gmail.com';" class="btn">
+                    Kontaktieren
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-4 mb-64">
+        <h2 class="text-3xl mb-8">Projekte</h2>
+
+        <h2 class="text-3xl mb-8">Fähigkeiten</h2>
+        <div class="flex flex-col lg:flex-row gap-6 flex-wrap">
+            <div class="card flex-1 shadow-sm bg-slate-50">
+                <div class="card-body">
+                    <h3 class="card-title">Sprachen</h3>
+                    <details class="collapse bg-base-100 collapse-arrow border border-base-300"
+                        name="languages-accordion" open>
+                        <summary class="collapse-title">General Purpose</summary>
+                        <div class="collapse-content">
+                            <ol class="list rounded-box">
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-python"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Python</h4>
+                                        <p>
+                                            Die Sprache mit der ich am meisten Erfahrung gesammelt habe.
+                                            Dies ist auch die Sprache welche in der Universität am meisten Verwendung
+                                            fand.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-golang"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Go</h4>
+                                        <p>
+                                            Als Sprache die durch Simplizität aber auch Produktivität hervorsticht, habe
+                                            ich sie für mich persönlich erlernt.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-c-sharp"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">C#</h4>
+                                        <p>
+                                            Die Sprache mit der ich in der Vergangenheit beruflich arbeiten konnte.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-rust"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Rust</h4>
+                                        <p>
+                                            Durch das strikte Typsystem und den Fokus auf Geschwindigkeit hebt sich
+                                            diese Sprache von anderen ab. Ich habe ein paar kleinere persönliche
+                                            Projekte damit umgesetzt.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-coffee"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Java</h4>
+                                        <p>
+                                            Die erste Sprache die ich gelernt habe. Auch auf der Universität habe ich
+                                            die Sprache immer wieder genutzt.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details class="collapse bg-base-100 collapse-arrow border border-base-300"
+                        name="languages-accordion">
+                        <summary class="collapse-title">Web</summary>
+                        <div class="collapse-content">
+                            <ol class="list rounded-box">
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-html5"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">HTML</h4>
+                                        <p>
+                                            Die Grundlage für das moderne Internet. Damit auch eine der wichtigsten
+                                            Sprachen für Web Development zu beherrschen.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-css3"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">CSS</h4>
+                                        <p>
+                                            Durch ein Interesse an Design habe ich Freude am Arbeiten mit CSS.
+                                            Im Fall dieser Website auch mit Tailwindcss.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-javascript"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">JavaScript</h4>
+                                        <p>
+                                            Als die populärste Clientside Sprache für das Web ist auch die Sprache gut
+                                            zu beherrschen. Ich habe häufig mit der TypeScript Variante gearbeitet.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-svelte"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Svelte</h4>
+                                        <p>
+                                            Ein elegantes Framework, welches ich beruflich nutzen konnte. Auch kleine
+                                            persönlich Projekte habe ich damit umgesetzt.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="card flex-1 shadow-sm bg-slate-50">
+                <div class="card-body">
+                    <h3 class="card-title">Werkzeuge</h3>
+                    <details class="collapse bg-base-100 collapse-arrow border border-base-300" name="tools-accordion"
+                        open>
+                        <summary class="collapse-title">Versionierung</summary>
+                        <div class="collapse-content">
+                            <ol class="list rounded-box">
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-git"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Git</h4>
+                                        <p>
+                                            Das Versions System welches nahezu überall genutzt wird.
+                                            Für das Entwickeln von Software unverzichtbar.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-gitlab"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">GitLab</h4>
+                                        <p>
+                                            Beruflich und auf der Universität habe ich GitLab genutzt um mit anderen
+                                            zusammen an Software zu arbeiten. Dabei habe ich auch Pipelines gebaut.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-github"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">GitHub</h4>
+                                        <p>
+                                            Für meine Persönlichen Projekte nutze ich GitHub. Dabei nutze ich auch gerne
+                                            GitHub Pages.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details class="collapse bg-base-100 collapse-arrow border border-base-300" name="tools-accordion">
+                        <summary class="collapse-title">Datenbanken</summary>
+                        <div class="collapse-content">
+                            <ol class="list rounded-box">
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-feather"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">SQLite</h4>
+                                        <p>
+                                            Die für kleine Projekte wahrscheinlich beste Datenbank. Durch die
+                                            filesystembasierte Nutzung besonders auch für meine persönlichen
+                                            Heimprojekte gut zu gebrauchen.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-mongodb"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">MongoDB</h4>
+                                        <p>
+                                            Ich konnte in der Vergangenheit beruflich Erfahrungen mit MongoDB sammeln.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details class="collapse bg-base-100 collapse-arrow border border-base-300" name="tools-accordion">
+                        <summary class="collapse-title">Mikrokontroller</summary>
+                        <div class="collapse-content">
+                            <ol class="list rounded-box">
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-infinity"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Arduino</h4>
+                                        <p>
+                                            Als Einstieg für das Entwickeln auf Mikrokontrollern bietet sich das
+                                            Ecosystem um Arduino an.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-letter-a"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">ATmega328P</h4>
+                                        <p>
+                                            Für kleine Spielerein habe ich auch ohne das Arduino Ecosystem direkt auf
+                                            den AVR Kontrollern Programme laufen lassen.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-grape"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Raspberry Pi Pico</h4>
+                                        <p>
+                                            Besonders für das Prototyping bietet sich der Raspberry Pi Pico an.
+                                            Hier ist es interessant auch Python interaktiv direkt nutzen zu können.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details class="collapse bg-base-100 collapse-arrow border border-base-300" name="tools-accordion">
+                        <summary class="collapse-title">Sonstige</summary>
+                        <div class="collapse-content">
+                            <ol class="list rounded-box">
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-docker"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Docker</h4>
+                                        <p>
+                                            Für das reproduzierbare Arbeiten ist diese Technik kaum wegzudenken.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-jira"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Jira</h4>
+                                        <p>
+                                            In dem Team in dem ich gearbeitet habe, wurde die Arbeit über Jira
+                                            koordiniert.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="card flex-1 shadow-sm bg-slate-50">
+                <div class="card-body">
+                    <h3 class="card-title">Entwicklungsumgebungen</h3>
+                    <details class="collapse bg-base-100 collapse-arrow border border-base-300"
+                        name="environment-accordion" open>
+                        <summary class="collapse-title">Editor</summary>
+                        <div class="collapse-content">
+                            <ol class="list rounded-box">
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-letter-v"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">NeoVim</h4>
+                                        <p>
+                                            Für meine persönlichen Projekte der Editor meiner Wahl.
+                                            Durch die Erweiterbarkeit habe ich mir eine ganz eigene Umgebung geschaffen.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-planet"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Jupyter</h4>
+                                        <p>
+                                            Gerade für Python bietet sich das interaktive Arbeiten mit Jupyter an.
+                                            Aber auch andere Kernel sind hier ein willkommenes Feature.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-visual-studio"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">VSCode</h4>
+                                        <p>
+                                            In der Vergangenheit habe ich besonders VSCode neben verschiedenen IDEs
+                                            genutzt.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details class="collapse bg-base-100 collapse-arrow border border-base-300"
+                        name="environment-accordion">
+                        <summary class="collapse-title">Shell</summary>
+                        <div class="collapse-content">
+                            <ol class="list rounded-box">
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-letter-z"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Zsh</h4>
+                                        <p>
+                                            Als die standard MacOS Shell nutze ich sie persönlich sehr gerne.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-terminal-2"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Bash</h4>
+                                        <p>
+                                            Zwar sehr ähnlich zu Zsh aber dennoch mit leichten Unterschieden nutze ich
+                                            diese Shell in der Regel auf fremden oder selten genutzten Maschinen.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details class="collapse bg-base-100 collapse-arrow border border-base-300"
+                        name="environment-accordion">
+                        <summary class="collapse-title">Terminal Emulator</summary>
+                        <div class="collapse-content">
+                            <ol class="list rounded-box">
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-ghost"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Ghostty</h4>
+                                        <p>
+                                            Durch das primäre Arbeiten im Terminal haben sich die Features die Ghostty
+                                            mitbringt als nützlich erwiesen.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-apple"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">MacOS Terminal</h4>
+                                        <p>
+                                            Auch das standard MacOS Terminal bietet genug Möglichkeiten um die meisten
+                                            arbeiten zu erledigen.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details class="collapse bg-base-100 collapse-arrow border border-base-300"
+                        name="environment-accordion">
+                        <summary class="collapse-title">KI Agent</summary>
+                        <div class="collapse-content">
+                            <ol class="list rounded-box">
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-letter-o"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">OpenCode</h4>
+                                        <p>
+                                            Gerade durch das großzügige kostenlose Nutzungslimit nutze ich diesen Client
+                                            gerne um Prototypen schnell zu erstellen.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-square-chevron-right"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Gemini CLI</h4>
+                                        <p>
+                                            Ich habe auch die Gemini CLI in der Vergangenheit genutzt.
+                                            Mittlerweile wurde diese durch die Antigravity CLI abgelöst.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+                    <details class="collapse bg-base-100 collapse-arrow border border-base-300"
+                        name="environment-accordion">
+                        <summary class="collapse-title">Betriebssystem</summary>
+                        <div class="collapse-content">
+                            <ol class="list rounded-box">
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-apple"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">MacOS</h4>
+                                        <p>
+                                            Das Betriebssystem welches ich für meine persönlichen Arbeiten nutze und
+                                            somit auch das mit dem ich am meisten Erfahrung habe.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-debian"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Linux</h4>
+                                        <p>
+                                            Gerade durch Arbeiten auf anderen Maschinen habe ich Erfahrungen mit
+                                            verschiedenen Linux Distributionen sammeln können. Hierbei häufig auch über
+                                            SSH.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="list-row">
+                                    <i class="text-3xl ti ti-brand-windows"></i>
+                                    <div>
+                                        <h4 class="text-xs font-semibold">Windows</h4>
+                                        <p>
+                                            Früher habe ich Windows persönlich genutzt. Auch im Beruflichen Kontext habe
+                                            ich mit Windows gearbeitet.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+        <aside>
+            <p>Copyright © 2026 Simon Daniel Wall. Alle Rechte vorbehalten.</p>
+        </aside>
+    </footer>
 </body>
 
 </html>
