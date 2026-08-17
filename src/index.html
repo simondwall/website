@@ -16,7 +16,7 @@
     <div class="hero">
         <div class="hero-content flex flex-col p-10 min-h-screen max-w-screen">
             <h1 class="text-[12dvw] -mb-[12dvw] z-0">Simon D. Wall</h1>
-            <img src="foto.webp" class="-mb-[25dvh] z-1 max-w-[75dvw] max-h-[75dvh] mask-x-from-80% select-none"
+            <img src="img/portrait.webp" class="-mb-[25dvh] z-1 max-w-[75dvw] max-h-[75dvh] mask-x-from-80% select-none"
                 draggable="false">
             <div
                 class="z-2 min-w-full -mb-[12.5dvh] min-h-[25dvh] bg-linear-to-b from-transparent via-30% via-white/80 to-70% to-white">
@@ -40,12 +40,66 @@
     </div>
 
     <main class="container mx-auto px-4 mb-64">
-        <h2 class="text-3xl mb-8">Projekte</h2>
+        <h2 class="text-3xl mt-32 mb-8">Projekte</h2>
+        <div class="flex flex-col lg:flex-row gap-6 mb-24">
+            <div class="flex-1">
+                <a href="https://github.com/simondwall/BibleRag">
+                    <img class="select-none shadow-md" draggable="false" src="img/bible-rag.webp"></img>
+                </a>
+            </div>
+            <div class="flex-2">
+                <h3 class="text-2xl semi-bold mb-8">Bibelvers Suchmaschine</h3>
+                <p class="text-justify">
+                    Ein Werkzeug um Bibelverse zu suchen.
+                    Dazu habe ich mich an Retrieval Augmented Generation (RAG) orientiert.
+                    Für jeden Vers wird ein Embedding berechnet, diese werden in einer Datenbank gespeichert.
+                    Sucht man nun einen Vers wird die Anfrage in das gleiche Embeddingspace berechnet und die
+                    nächsten
+                    Vers-Embeddings werden an einen Reranker gegeben.
+                    Die besten Ergebnisse werden dem Nutzer angezeigt.
+                </p>
+            </div>
+        </div>
 
-        <h2 class="text-3xl mb-8">Fähigkeiten</h2>
-        <div class="flex flex-col lg:flex-row gap-6 flex-wrap">
-            <div class="card flex-1 shadow-sm bg-slate-50">
-                <div class="card-body">
+        <div class="flex flex-col lg:flex-row-reverse gap-6 mb-24">
+            <div class="flex-1">
+                <a href="https://simondwall.github.io/VocabularyTrainer/">
+                    <img class="select-none shadow-md" draggable="false" src="img/vokabel-trainer.webp"></img>
+                </a>
+            </div>
+            <div class="flex-2">
+                <h3 class="text-2xl semi-bold mb-8 text-right">Lernkarten Software</h3>
+                <p class="text-justify">
+                    Für mein persönliches gelegentliches Vokabeln lernen habe ich mir eine Software geschrieben.
+                    Die Vokabeln werden in einer SQLite Datenbank gespeichert, so dass sie lokal auf dem Gerät oder
+                    in
+                    einer Cloud gespeichert werden können. Die Webapp greift dann über die Filesystem API direkt auf
+                    diese Datei zu.
+                </p>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-6 mb-24">
+            <div class="flex-1">
+                <a href="https://simondwall.github.io/bible_headings/">
+                    <img class="select-none shadow-md" draggable="false" src="img/bible-headings.webp"></img>
+                </a>
+            </div>
+            <div class="flex-2">
+                <h3 class="text-2xl semi-bold mb-8">Bibelabschnitt Lernhilfe</h3>
+                <p class="text-justify">
+                    Eine Lernhilfe um sich das Thema eines Abschnitts aus der Bibel besser einprägen zu können.
+                    Es wird eine Überschrift angezeigt und man muss auswählen zu welchem Textabschnitt diese
+                    Überschrift
+                    gehört. Das Projekt wurde in Svelte umgesetzt.
+                </p>
+            </div>
+        </div>
+
+        <h2 class="text-3xl mt-64 mb-8">Fähigkeiten</h2>
+        <div class="flex flex-col lg:flex-row flex-wrap gap-6">
+            <div class="flex-1">
+                <div class="flex flex-col gap-2">
                     <h3 class="card-title">Sprachen</h3>
                     <details class="collapse bg-base-100 collapse-arrow border border-base-300"
                         name="languages-accordion" open>
@@ -58,7 +112,8 @@
                                         <h4 class="text-xs font-semibold">Python</h4>
                                         <p>
                                             Die Sprache mit der ich am meisten Erfahrung gesammelt habe.
-                                            Dies ist auch die Sprache welche in der Universität am meisten Verwendung
+                                            Dies ist auch die Sprache welche in der Universität am meisten
+                                            Verwendung
                                             fand.
                                         </p>
                                     </div>
@@ -68,7 +123,8 @@
                                     <div>
                                         <h4 class="text-xs font-semibold">Go</h4>
                                         <p>
-                                            Als Sprache die durch Simplizität aber auch Produktivität hervorsticht, habe
+                                            Als Sprache die durch Simplizität aber auch Produktivität hervorsticht,
+                                            habe
                                             ich sie für mich persönlich erlernt.
                                         </p>
                                     </div>
@@ -98,7 +154,8 @@
                                     <div>
                                         <h4 class="text-xs font-semibold">Java</h4>
                                         <p>
-                                            Die erste Sprache die ich gelernt habe. Auch auf der Universität habe ich
+                                            Die erste Sprache die ich gelernt habe. Auch auf der Universität habe
+                                            ich
                                             die Sprache immer wieder genutzt.
                                         </p>
                                     </div>
@@ -136,7 +193,8 @@
                                     <div>
                                         <h4 class="text-xs font-semibold">JavaScript</h4>
                                         <p>
-                                            Als die populärste Clientside Sprache für das Web ist auch die Sprache gut
+                                            Als die populärste Clientside Sprache für das Web ist auch die Sprache
+                                            gut
                                             zu beherrschen. Ich habe häufig mit der TypeScript Variante gearbeitet.
                                         </p>
                                     </div>
@@ -146,7 +204,8 @@
                                     <div>
                                         <h4 class="text-xs font-semibold">Svelte</h4>
                                         <p>
-                                            Ein elegantes Framework, welches ich beruflich nutzen konnte. Auch kleine
+                                            Ein elegantes Framework, welches ich beruflich nutzen konnte. Auch
+                                            kleine
                                             persönlich Projekte habe ich damit umgesetzt.
                                         </p>
                                     </div>
@@ -157,8 +216,8 @@
                 </div>
             </div>
 
-            <div class="card flex-1 shadow-sm bg-slate-50">
-                <div class="card-body">
+            <div class="flex-1">
+                <div class="flex flex-col gap-2">
                     <h3 class="card-title">Werkzeuge</h3>
                     <details class="collapse bg-base-100 collapse-arrow border border-base-300" name="tools-accordion"
                         open>
@@ -190,7 +249,8 @@
                                     <div>
                                         <h4 class="text-xs font-semibold">GitHub</h4>
                                         <p>
-                                            Für meine Persönlichen Projekte nutze ich GitHub. Dabei nutze ich auch gerne
+                                            Für meine Persönlichen Projekte nutze ich GitHub. Dabei nutze ich auch
+                                            gerne
                                             GitHub Pages.
                                         </p>
                                     </div>
@@ -218,7 +278,8 @@
                                     <div>
                                         <h4 class="text-xs font-semibold">MongoDB</h4>
                                         <p>
-                                            Ich konnte in der Vergangenheit beruflich Erfahrungen mit MongoDB sammeln.
+                                            Ich konnte in der Vergangenheit beruflich Erfahrungen mit MongoDB
+                                            sammeln.
                                         </p>
                                     </div>
                                 </li>
@@ -244,7 +305,8 @@
                                     <div>
                                         <h4 class="text-xs font-semibold">ATmega328P</h4>
                                         <p>
-                                            Für kleine Spielerein habe ich auch ohne das Arduino Ecosystem direkt auf
+                                            Für kleine Spielerein habe ich auch ohne das Arduino Ecosystem direkt
+                                            auf
                                             den AVR Kontrollern Programme laufen lassen.
                                         </p>
                                     </div>
@@ -291,8 +353,8 @@
                 </div>
             </div>
 
-            <div class="card flex-1 shadow-sm bg-slate-50">
-                <div class="card-body">
+            <div class="flex-1">
+                <div class="flex flex-col gap-2">
                     <h3 class="card-title">Entwicklungsumgebungen</h3>
                     <details class="collapse bg-base-100 collapse-arrow border border-base-300"
                         name="environment-accordion" open>
@@ -456,7 +518,6 @@
                     </details>
                 </div>
             </div>
-        </div>
     </main>
 
     <footer class="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
